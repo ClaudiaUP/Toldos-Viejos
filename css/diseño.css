@@ -350,6 +350,20 @@ h1{
     margin: 20px 20px 20px 50px;
 }
 
+ul li{
+    
+    font-size: 10px;
+    
+}
+
+ol li{
+    font-size: 10;
+}
+
+ol li a{
+    font-size: 10;
+}
+
 
 
     }
