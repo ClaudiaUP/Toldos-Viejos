@@ -15,21 +15,30 @@
     background-size: 100%;
  }
 
- .titulo h1{
+ .titulo{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    width: 300%;
+ 
+} 
+
+h1{
+    background-size: auto;
+    grid-area: titulo;
     color: lightblue;
-    font-size: 40px;
+    font-size: 30px;
     text-transform: uppercase;
     text-align: center;
     padding: 10px 10px 10px 10px; 
-    width: 210%;
     margin: 10px 10px 10px 10px;
     background-image: radial-gradient(blue, lightgreen);
-    animation-name:data-aos="zoom-in" ;
+
     
 }
+
+ 
 
 /*----------Nav------*/
  nav{
@@ -63,7 +72,7 @@
 }
 
 .navegador ul li a:hover{
-    background: blue;
+    background: rgb(15, 223, 84);
 }
 
 .sacarLinea{
@@ -76,7 +85,13 @@
     font-weight: bold;
     background: rosybrown;
     margin: 5px 10px 10px 10px;
-    
+    transition: height 0.1s, width 0.8s ;
+}
+
+.ponerEnLinea:hover{
+    height: 50px;
+    width: 100px;
+
 }
 
 
@@ -96,8 +111,13 @@
         width: 350px;
         height: 300px;
         margin: 30px;
-        
+        transition: height 0.1s, width 0.8s ;
 } 
+
+.tamañoFoto:hover{
+    height: 400px;
+    width: 350px;
+}
 
 /*------seccionA------*/
 .seccionA{
@@ -195,18 +215,7 @@ h4{
     color: black;
 }
 
-/* .contenedorPadre {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "padreFotos"
-    "seccionA"
-    "seccionB"
-    "contacto"
-    "cuadroContacto"
-    "footer"
-}     */
+
 
 /*-----Maternidad*/
     
@@ -284,6 +293,21 @@ h4{
     color: cadetblue;
 }
 
+@keyframes texto{
+    0%{
+        opacity: 0;
+    }
+  100%{
+    opacity: 100%;
+  }  
+}
+
+.animacion{
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
 /*----Contacto-------*/
  
    
@@ -295,6 +319,12 @@ h4{
 
  .cuadroContactos{
     grid-area: cuadroContactos; 
+    background-color: cadetblue;
+    width: 50%;
+    border: 2px black solid;
+    margin: 20px 30px 20px 270px;
+    box-shadow: 5px 5px 5px 5px grey;
+   
 } 
 
 
@@ -312,6 +342,15 @@ h4{
         margin: 0.1rem;
         
     }
+
+h1{
+    font-size: 20px;
+} 
+.cuadroContactos{
+    margin: 20px 20px 20px 50px;
+}
+
+
 
     }
 
