@@ -185,8 +185,6 @@ h4{
 } 
  .cuadroDeVenta{
    display: inline;
-    background-color: lightgreen;
-    border: 2px dotted darkolivegreen; 
     text-align: center;
      width: 200%;
     font-size: 15px; 
@@ -195,7 +193,7 @@ h4{
 
 .agrandarLetraVenta{
     font-size: 20px;
-    color: cadetblue;
+   
 }
 
 @keyframes texto{
@@ -214,28 +212,24 @@ h4{
 }
 
 /*----Contacto-------*/
- 
-   
 
- .contacto{
-   grid-area: contacto; 
-   justify-content: center;
- 
+.contacto{
+    gap: 20px;
 }
+.separar{
+    gap: 20px;
+ }
 
- .cuadroContactos{
-    grid-area: cuadroContactos; 
-    background-color: cadetblue;
-    width: 50%;
-    border: 2px black solid;
-    margin: 20px 30px 20px 270px;
-    box-shadow: 5px 5px 5px 5px grey;
-   
-} 
+  .colorform{
+    background-color: burlywood;
+  } 
 
 
 
-  @media (max-width:500px) {
+
+
+
+  @media (max-width:576px) {
 
     .tamañoFoto{
         width: 90vw;
@@ -247,9 +241,7 @@ h4{
 h1{
     font-size: 20px;
 } 
-.cuadroContactos{
-    margin: 20px 20px 20px 50px;
-}
+ 
 
 ul li{
     
@@ -258,18 +250,47 @@ ul li{
 }
 
 ol li{
-    font-size: 10;
+    font-size: 10px;
 }
 
 ol li a{
-    font-size: 10;
+    font-size: 10px;
 }
 
+.tamañoFoto:hover{
+    height: 350px;
+    width: 300px;
+    margin-bottom: 5px;
+} 
 
+.formato{
+    font-size: 15px;
+}
 
-    }
+.formato2{
+    font-size: 15px;
+}
 
- 
+.formatoMaterni{
+    font-size: 15px;
+}
+
+.formatoTambo{
+    font-size: 15px;
+}
+
+.formatoVenta{
+    font-size: 15px;
+}
+
+.tamañoFoto{
+    width: 250px;
+    height: 200px;
+    margin: 30px;
+    transition: height 0.1s, width 0.8s ;
+} 
+
+.agrandarLetraVenta{
+    font-size: 15px;
    
-
-
+}
